@@ -17,12 +17,19 @@ if (navigator.serviceWorker) {
  * Input
  */
 function myButtonClicked() {
-  const numbervalue = parseInt(document.getElementById("numbervalue").value)
+  const age = parseInt(document.getElementById("age").value)
 
   // process
-  if (numbervalue < 0) {
-    document.getElementById("answer").innerHTML = "The number is negative!"
+  if (age == 17) {
+    document.getElementById("answer").innerHTML = "You can see an R rated movie alone"
+    }
+    else if (age == 13) {
+      document.getElementById("answer").innerHTML = "You can see an PG 13 rated movie alone"
+    }
+    else if (age == 5) {
+      document.getElementById("answer").innerHTML = "You can see an G rated movie alone"
+    }
   } else {
-    document.getElementById("answer").innerHTML = "The number is positive!"
+    document.getElementById("answer").innerHTML = "Uh. You are too young for most things!"
   }
 }
