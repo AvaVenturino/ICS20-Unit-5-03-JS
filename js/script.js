@@ -17,19 +17,21 @@ if (navigator.serviceWorker) {
  * Input
  */
 function myButtonClicked() {
-  const age = parseInt(document.getElementById("age").value)
+  const age17 = parseInt(document.getElementById("age17").value)
+  const age13 = parseInt(document.getElementById("age13").value)
+  const age5 =  parseInt(document.getElementById("age5").value)
 
   // process
-  if (age == 17) {
+  if (age17 == 17) {
     document.getElementById("answer").innerHTML = "You can see an R rated movie alone"
     }
-    else if (age == 13) {
+    else if (age13 == 13) {
       document.getElementById("answer").innerHTML = "You can see an PG 13 rated movie alone"
     }
-    else if (age == 5) {
+    else if (age5 == 5) {
       document.getElementById("answer").innerHTML = "You can see an G rated movie alone"
     }
-  } else {
+    else {
     document.getElementById("answer").innerHTML = "Uh. You are too young for most things!"
   }
 }
