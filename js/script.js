@@ -22,7 +22,6 @@ function myButtonClicked() {
   const age5 =  document.getElementById("age5").checked
 
   // process
-  console.log(age17)
   if (age17 == true) {
     document.getElementById("answer").innerHTML = "You can see an R rated movie alone"
   } else if (age13 == true) {
