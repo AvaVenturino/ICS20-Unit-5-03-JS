@@ -10,16 +10,16 @@
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS20-Unit-5-03-JS/sw.js", {
     scope: "/ICS20-Unit-5-03-JS/",
-  })
+  });
 }
 
 /**
  * Input
  */
 function myButtonClicked() {
-  const age17 = document.getElementById("age17").checked
-  const age13 = document.getElementById("age13").checked
-  const age5 = document.getElementById("age5").checked
+  const age17 = document.getElementById("age17").checked;
+  const age13 = document.getElementById("age13").checked;
+  const age5 = document.getElementById("age5").checked;
 
   // process
   if (age17 == true) {
